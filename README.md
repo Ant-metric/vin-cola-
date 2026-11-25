@@ -2,15 +2,22 @@
 
 Site estático (HTML, CSS e JS prontos, sem etapa de build).
 
+Publicado no GitHub Pages: https://ant-metric.github.io/vin-cola-/
+
+## Caminhos
+
+Todos os links e arquivos usam o prefixo `/vin-cola-/` (ex.: `/vin-cola-/vinhos/`, `/vin-cola-/site/...`), porque o GitHub Pages serve o site nessa subpasta.
+Se o site for para um domínio próprio (servido na raiz), troque `/vin-cola-/` por `/` em todos os `.html`.
+
 ## Como rodar localmente
 
-O site usa caminhos absolutos (`/vinhos/`, `/site/...`), então precisa ser servido a partir da raiz desta pasta. Abrir o `index.html` direto no navegador não funciona.
+Abrir o `index.html` direto no navegador não funciona. Use o servidor incluído (precisa do Node.js):
 
 ```powershell
-npx serve .
+node servidor-local.js
 ```
 
-Ou use a extensão Live Server do VS Code (porta 5501, já configurada em `.vscode/settings.json`).
+e abra http://localhost:8080/vin-cola-/
 
 ## Estrutura
 
